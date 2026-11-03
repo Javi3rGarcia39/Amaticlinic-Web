@@ -1,0 +1,7 @@
+<!-- [Logo] AmatiClinic: "A" con forma de volcan, ola del lago de Amatitlan y cruz medica -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <rect width="48" height="48" rx="13" fill="#02C39A"/>
+  <path d="M10.5 37.5 L24 11 L37.5 37.5" fill="none" stroke="#0B3D3A" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M15.2 29.5 q4.4 -3.6 8.8 0 t8.8 0" fill="none" stroke="#0B3D3A" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M36 7.5v9M31.5 12h9" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/>
+</svg>

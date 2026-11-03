@@ -1,0 +1,19 @@
+# Base de datos PostgreSQL de AmatiClinic (puerto 5433 en Windows -> 5432 en el contenedor)
+services:
+  postgres:
+    image: postgres:16
+    container_name: amaticlinic-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: citas_medicas
+      TZ: America/Guatemala   # [Mejoras] hora de Guatemala
+    # [Mejoras] Sin esto PostgreSQL trabaja en UTC (6 horas adelantado)
+    command: ["postgres", "-c", "timezone=America/Guatemala"]
+    ports:
+      - "5433:5432"
+    volumes:
+      - amaticlinic-data:/var/lib/postgresql/data
+    restart: unless-stopped
+volumes:
+  amaticlinic-data:

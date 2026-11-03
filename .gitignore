@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.angular/
+backend/.env
+# [Despliegue] Archivos con secretos o generados por Vercel (los .example si se suben)
+backend/.env.production
+backend/.env.local
+.vercel/

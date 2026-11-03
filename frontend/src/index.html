@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>AmatiClinic</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- [Logo] Icono de la pestana (SVG en navegadores modernos, .ico como respaldo) -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="theme-color" content="#0B3D3A">
+  <!-- [ModoOscuro] Aplica el tema guardado (o el del sistema) antes de que cargue Angular -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('amaticlinic.tema'); } catch (e) {}
+      var oscuro = t ? t === 'oscuro' : window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (oscuro) { document.documentElement.classList.add('dark'); document.documentElement.style.colorScheme = 'dark'; }
+    })();
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
